@@ -56,7 +56,6 @@ This project demonstrates a simple data engineering workflow using Apache Airflo
 
 ---
 
-## Project Setup
 ## Docker Setup
 
 ### Prerequisites
@@ -79,13 +78,13 @@ This will:
 - Start all services defined in docker-compose.yml
 
 ## Usage
-- **Access Airflow UI**
+**Access Airflow UI**
 - Open your web browser and navigate to http://localhost:8080 (or the port specified in your docker-compose.yml).
 - Log in with your Airflow credentials.
-- **Enable the DAG**
+**Enable the DAG**
 - In the Airflow UI, locate the DAG named weather_data_pipeline.
 - Toggle the DAG to “On” to enable scheduled runs.
-- **Monitor the Pipeline**
+**Monitor the Pipeline**
 - Use the Airflow UI’s “Graph” or “Tree” view to track task progress.
 - View logs for detailed information by clicking on individual tasks or by running:
 
@@ -94,7 +93,7 @@ docker-compose logs -f airflow-webserver
 ```
 ![image](https://github.com/user-attachments/assets/e916b03d-36a9-4905-b0ec-c0b30a71301a)
 
-- **Check Data in PostgreSQL**
+**Check Data in PostgreSQL**
 - Connect to your PostgreSQL container to verify that data has been loaded correctly:
 - Run a SQL query to view the data:
 ```
@@ -102,7 +101,7 @@ SELECT * FROM weather;
 ```
 ![image](https://github.com/user-attachments/assets/40890d34-6103-4789-8f75-413a2faadee1)
 
-- **Set Up Amazon RDS**
+**Set Up Amazon RDS**
 - Create a PostgreSQL instance on Amazon RDS.
 - Update the Airflow connection settings or the environment variables to point to your RDS endpoint.
 - Restart the Airflow scheduler to confirm data flows into RDS:
