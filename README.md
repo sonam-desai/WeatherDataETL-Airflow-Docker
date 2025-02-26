@@ -22,6 +22,8 @@ This project demonstrates a simple data engineering workflow using Apache Airflo
 
 ## Architecture
 
+![Architecture Diagram](./images/WeatherETL.png)
+
 - **Open API Weather Data**  
   Source of weather data (e.g., OpenWeatherMap API).
 
