@@ -1,3 +1,73 @@
+# Weather Data ETL Pipeline with Airflow
+
+A sample ETL pipeline that extracts weather data from the OpenWeatherMap API, transforms it using Python, and loads it into a PostgreSQL database running on Docker. Finally, the data is deployed or hosted in an Amazon RDS instance for further analysis and usage.
+
+## Table of Contents
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Project Setup](#project-setup)
+- [Usage](#usage)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
+- [Contributing](#contributing)
+
+---
+
+## Overview
+This project demonstrates a simple data engineering workflow using Apache Airflow, Docker, and PostgreSQL. The pipeline retrieves data from an external weather API, applies necessary transformations, and then stores the data in a PostgreSQL database containerized with Docker. Finally, you can replicate or host the database on Amazon RDS for production use.
+
+---
+
+## Architecture
+
+- **Open API Weather Data**  
+  Source of weather data (e.g., OpenWeatherMap API).
+
+- **DAG Workflows (Apache Airflow)**
+  - **Extract**: Periodically fetch data from the weather API.
+  - **Transform**: Process and clean the data using Python.
+  - **Load**: Insert the transformed data into PostgreSQL.
+
+- **PostgreSQL Database**
+  - Containerized using Docker.
+  - Stores processed weather data.
+
+- **Amazon RDS**
+  - Optionally, replicate or migrate your local PostgreSQL to Amazon RDS for production or scaling.
+
+---
+
+## Features
+- **Scheduled Data Extraction**: Automatic scheduling of API calls to fetch the latest weather data.
+- **Data Transformation**: Cleans, structures, and formats raw data for analysis.
+- **Containerized Environment**: Docker-based deployment for consistent and portable environments.
+- **Easy Scalability**: Move from local PostgreSQL to Amazon RDS with minimal changes.
+
+---
+
+## Technologies
+- **[Apache Airflow](https://airflow.apache.org/docs/)**: For orchestrating and scheduling ETL tasks.
+- **[Docker](https://docs.docker.com/)**: For containerizing the application and database.
+- **Python**: For data transformation and script-based automation.
+- **[PostgreSQL](https://www.postgresql.org/)**: Database for storing processed data.
+- **[Amazon RDS](https://aws.amazon.com/rds/)**: Cloud-based database hosting (optional for production).
+
+---
+
+## Project Setup
+
+### Clone the Repository
+```bash
+git clone https://github.com/YourUsername/your-weather-etl.git
+cd your-weather-etl
+
+
+A sample ETL pipeline that extracts weather data from the OpenWeatherMap API, transforms it using Python, and loads it into a PostgreSQL database running on Docker. Finally, the data is deployed or hosted in an Amazon RDS instance for further analysis and usage.
+
+
+
 Overview
 ========
 
