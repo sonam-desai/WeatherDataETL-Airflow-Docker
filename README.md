@@ -60,6 +60,9 @@ This project demonstrates a simple data engineering workflow using Apache Airflo
 
 ## Project Setup
 
+![image](https://github.com/user-attachments/assets/40890d34-6103-4789-8f75-413a2faadee1)
+
+
 Project Contents
 ================
 Welcome to Astronomer! This project was generated after you ran 'astro dev init' using the Astronomer CLI. This readme describes the contents of the project, as well as how to run Apache Airflow on your local machine.
