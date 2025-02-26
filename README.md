@@ -63,7 +63,7 @@ This project demonstrates a simple data engineering workflow using Apache Airflo
 ```bash
 git clone https://github.com/YourUsername/your-weather-etl.git
 cd your-weather-etl
----
+```
 ![image](https://github.com/user-attachments/assets/40890d34-6103-4789-8f75-413a2faadee1)
 
 
