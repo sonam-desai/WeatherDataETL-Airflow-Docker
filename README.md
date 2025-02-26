@@ -58,23 +58,9 @@ This project demonstrates a simple data engineering workflow using Apache Airflo
 
 ## Project Setup
 
-### Clone the Repository
-```bash
-git clone https://github.com/YourUsername/your-weather-etl.git
-cd your-weather-etl
-
-
-A sample ETL pipeline that extracts weather data from the OpenWeatherMap API, transforms it using Python, and loads it into a PostgreSQL database running on Docker. Finally, the data is deployed or hosted in an Amazon RDS instance for further analysis and usage.
-
-
-
-Overview
-========
-
-Welcome to Astronomer! This project was generated after you ran 'astro dev init' using the Astronomer CLI. This readme describes the contents of the project, as well as how to run Apache Airflow on your local machine.
-
 Project Contents
 ================
+Welcome to Astronomer! This project was generated after you ran 'astro dev init' using the Astronomer CLI. This readme describes the contents of the project, as well as how to run Apache Airflow on your local machine.
 
 Your Astro project contains the following files and folders:
 
@@ -112,7 +98,4 @@ Deploy Your Project to Astronomer
 
 If you have an Astronomer account, pushing code to a Deployment on Astronomer is simple. For deploying instructions, refer to Astronomer documentation: https://www.astronomer.io/docs/astro/deploy-code/
 
-Contact
-=======
 
-The Astronomer CLI is maintained with love by the Astronomer team. To report a bug or suggest a change, reach out to our support.
